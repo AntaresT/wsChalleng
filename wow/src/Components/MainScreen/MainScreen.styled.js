@@ -23,8 +23,9 @@ export const StyledMainScreen = styled.button`
 
   span {
     width: 2rem;
+    margin-bottom: 1px;
     height: 0.25rem;
-    background: ${({ theme, open }) => open ? '#ee5253' : '#ee5253'};
+    background: ${({ theme, open }) => open ? '#48dbfb' : '#ff9f43  '};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
