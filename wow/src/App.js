@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GlobalStyles } from './globalStyle';
 
+
 import Menu from './Components/Menu';
 import MainScreen from './Components/MainScreen';
 
@@ -10,9 +11,6 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <div>
-        <h1>Hello Welcome to my Front End Test</h1>
-      </div>
       <div>
         <MainScreen open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
