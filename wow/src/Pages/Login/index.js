@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import api from '../../Services/api';
-import { login } from '../../Services/auth';
+import { login, username } from '../../Services/auth';
 
 class CallerLogin extends Component {
 
@@ -28,7 +28,8 @@ class CallerLogin extends Component {
                 }).then(response => {
                     console.log(response.data)
                     console.log(response.status)
-                    login(response.data.token);
+                    login(response.data.token)
+                    username(response.data.user.name)
                 });
                 window.confirm("Você está Logado")
                 this.props.history.push("");
